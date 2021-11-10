@@ -23,7 +23,6 @@ Implement a persistent storage for all entities using file-based repositories. A
 1. You must implement two additional repository sets: one using text files for storage, and one using binary files
 2. The program must work the same way using in-memory repositories, text-file repositories and binary file repositories.
 3. The decision of which repositories are employed, as well as the location of the repository input files will be made in the program’s `settings.properties` file.
-    ```
 - In addition to the file-based implementations above, implement the repository layer to use JSON or XML files for storage (at your choice).
 
 - Create a `Settings` class into which you load the data from the `settings.properties` file. Then, the application start module decides which modules are started by examining the `settings` object. This further decouples the properties input file from the application.
