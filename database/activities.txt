@@ -1,0 +1,2 @@
+1| [1, 2, 3]|13/11/2020|09:00|AC/DC PwrUp relase album
+2| [1, 3]|25/12/2020|19:00|Stefan Hrusca concert de Craciun
