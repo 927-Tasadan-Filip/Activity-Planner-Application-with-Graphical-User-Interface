@@ -22,22 +22,7 @@ Create an application to:
 Implement a persistent storage for all entities using file-based repositories. Also implement a `settings.properties` file to configure your application. Observations:
 1. You must implement two additional repository sets: one using text files for storage, and one using binary files
 2. The program must work the same way using in-memory repositories, text-file repositories and binary file repositories.
-3. The decision of which repositories are employed, as well as the location of the repository input files will be made in the program’s `settings.properties` file. An example is below:
-
-    a. `settings.properties` for loading from memory (input files are not required):
-    ```
-    repository = inmemory
-    cars = “”
-    clients = “”
-    rentals = “”
-    ```
-    b. `settings.properties` for loading from binary files, for someone who also created a GUI:
-    ```
-    repository = binaryfiles
-    cars = “cars.pickle”
-    clients = “clients.pickle”
-    rentals = “rentals.pickle”
-    ui = “GUI”
+3. The decision of which repositories are employed, as well as the location of the repository input files will be made in the program’s `settings.properties` file.
     ```
 - In addition to the file-based implementations above, implement the repository layer to use JSON or XML files for storage (at your choice).
 
@@ -47,6 +32,6 @@ Implement a persistent storage for all entities using file-based repositories. A
 
 Create a Python module that contains an iterable data structure, a sort method and a filter method, together with complete PyUnit unit tests (100% coverage). The module must be reusable in other projects. Update your code for Assignment6-9 to use the data structure (for storing objects in the repository) and both functions (in the repository or service layer) from this module.
 
-- Implement an iterable data structure. Study the [`__setItem__`](https://docs.python.org/3/reference/datamodel.html#object),`__getitem__`, `__delItem__`, `__next__` and `__iter__` Python methods.
+- Implement an iterable data structure. 
 - Implement a sorting algorithm that was not studied during the lecture or seminar (no bubble sort, cocktail sort, merge sort, insert sort, quicksort). You can use one of shell sort, comb sort, bingo sort, gnome sort, or other sorting method. Prove that you understand the sorting method implemented. The sort function will accept two parameters: the list to be sorted as well as a comparison function used to determine the order between two elements.
 - Implement a filter function that can be used to filter the elements from a list. The function will use 2 parameters: the list to be filtered, and an acceptance function that decided whether a given value passes the filter.
