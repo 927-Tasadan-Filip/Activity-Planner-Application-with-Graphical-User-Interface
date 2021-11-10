@@ -1,7 +1,5 @@
 # Activity-Planner-Application-with-Graphical-User-Interface
 
-# Activity-Planner-Application-with-Graphical-User-Interface
-
 ---
 ###  Activity Planner
 The following information is stored in a personal activity planner:
